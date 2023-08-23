@@ -1,0 +1,110 @@
+.big_div {
+  background: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  border-radius: 1%;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fiche {
+  margin: 2%;
+  width: 28%;
+  height: 75%;
+  border-radius: 5%;
+  overflow: hidden;
+  background: #fff;
+  position: relative;
+  display: block;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+}
+
+.fiche img {
+  width: 100%;
+  height: 40%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+
+.fiche h2 {
+  margin-top: -5%;
+  font-family: 'MaPolicePersonnalisee', sans-serif;
+
+}
+
+.btn-group {
+  position: absolute;
+  top: 0.5%;
+  right: 0.5%;
+  display: flex;
+  justify-content: right;
+}
+
+.btn-calendar, .btn-info {
+  width: 10%;
+  height: 10%;
+  padding: 0%;
+  margin: 0%;
+  background-color: transparent;
+  opacity: 0.7;
+  /*rendre le logo un peu transparent*/
+  border-color: transparent;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.ipm {
+  width: 100%;
+  height: 100%;
+}
+
+@font-face {
+  font-family: 'MaPolicePersonnalisee';
+  src: url('../style/police/Hello\ Sunday.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.btp-apport {
+  position: absolute;
+  bottom: 5px;
+  height: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+}
+
+@font-face {
+  font-family: 'MaPolicePersonnalisee2';
+  src: url('../style/police/Homemade\ Sausage.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.btp-apport > span {
+  border-color: transparent;
+  border-radius: 7px;
+  height: 35px;
+  cursor: pointer;
+  font-family: 'MaPolicePersonnalisee2', sans-serif;
+  margin: 5px;
+}
+
+.btn-prot {
+  background-color: #8c8e57;
+}
+
+.btn-fecul {
+  background-color: #b9b11f;
+}
+
+.btn-leg {
+  background-color: #d4bb40;
+}
+
+.selected{
+  box-shadow: 0px 7px 10px red;
+}

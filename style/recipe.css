@@ -1,0 +1,81 @@
+#recipe-container{
+    margin: 0%;
+}
+
+.big_div_recipe{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60%;
+    height: 80%;
+    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 10% 35% 55%;
+    grid-template-areas: 
+    "titre titre"
+    "image ingredient"
+    "etape etape"
+    ;
+    gap : 30px ;
+}
+
+.titre_recipe{
+    grid-area: titre;
+    font-family: 'policeTitre', 'sans-serif';
+}
+
+.titre_recipe h1{
+    margin-left: 2%;
+}
+
+.photo_recette{
+    grid-area: image;
+    align-self: center;
+    place-self: center;
+}
+
+.photo_recette img{
+    border-radius: 10%;
+     max-width: 200px;
+    max-height: 200px;
+}
+
+.ingredient{
+    grid-area: ingredient;
+    align-self: center;
+    font-family: 'policeReste', 'sans-serif';
+    overflow: auto;
+
+}
+
+.etape{
+    grid-area: etape;
+    font-family: 'policeReste', 'sans-serif';
+}
+
+.li_ingredient{
+    list-style-type: circle;
+}
+
+.etape ol li{
+    margin-bottom: 2%;
+}
+
+
+
+@font-face {
+    font-family: 'policeTitre';
+    src: url('../style/police/Columbus.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+  @font-face {
+    font-family: 'policeReste';
+    src: url('../style/police/HelloMorgan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }

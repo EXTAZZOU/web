@@ -1,0 +1,62 @@
+body {
+  margin: 0%;
+  
+
+}
+
+#planning-container {
+  padding-left: 0.7%;
+  padding-right: 1.5%;
+  background-color: #4f4e4e;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  grid-template-rows: 8% 72% 15%;
+  grid-template-areas:
+    "titre titre"
+    "calendar fiche"
+    "course fiche"
+  ;
+  gap: 10px 15px;
+
+}
+
+
+/*  css pour le calendrier */
+.calender {
+  grid-area: calendar;
+}
+
+/* en tete avec titre*/
+.head {
+  background-color: rgb(24, 24, 24);
+  color: #a28a4b;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'police_titre', 'sans-serif';
+  font-size: 2em;
+  grid-area: titre;
+}
+
+/*button pour la liste des course */
+.button_course {
+  grid-area: course;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-image: url('../img/magasin.jpg');
+  color: #000;
+  font-family: 'course_police';
+  border: none;
+  border-radius: 4%;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+
+}
+
+.big_div {
+  grid-area: fiche;
+}
+
+.scheduled{ }

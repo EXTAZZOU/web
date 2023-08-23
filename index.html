@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/common.css">
+    <link rel="stylesheet" href="style/planning.css">
+    <link rel="stylesheet" href="style/recipe.css">
+    <link rel="stylesheet" href="style/shopping-list.css">
+    <link rel="stylesheet" href="style/calendar.css">
+    <link rel="stylesheet" href="style/cards.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/navigation.js"></script>
+    <script src="scripts/index.js"></script>
+
+    <title>Planning</title>
+</head>
+
+<body>
+
+    <div id="planning-container">
+        <!--  header avec titre  -->
+        <header class="head">
+            BatchCooking
+        </header>
+
+        <!--  calendirer de la semaine  -->
+        <div class="calender">
+
+            <div class="div_haut">
+                <button class="dayScheduled"><h2>Lundi</h2></button>
+                <ul class="listePlat">
+                    
+                </ul>
+            </div>
+            <div class="div_haut">
+                <button class="dayScheduled"><h2>Mardi</h2></button>
+                <ul class="listePlat">
+                    
+                </ul>
+            </div>
+            <div class="div_haut">
+                <button class="dayScheduled"><h2>Mercredi</h2></button>
+                <ul class="listePlat">
+                    
+                </ul>
+            </div>
+            <div class="div_haut">
+                <button class="dayScheduled"><h2>Jeudi</h2></button>
+                <ul class="listePlat">
+                    
+                </ul>
+            </div>
+
+            <div class="div_bas">
+                <button class="dayScheduled"><h2>Vendredi</h2></button>
+                <ul class="listePlat">
+                    
+                </ul>
+            </div>
+            <div class="div_bas">
+                <button class="dayScheduled"><h2>Samedi</h2></button>
+                <ul class="listePlat">
+                    
+                </ul>
+            </div>
+            <div class="div_bas">
+                <button class="dayScheduled"><h2>Dimanche</h2></button>
+                <ul class="listePlat">
+                    
+                </ul>
+            </div>
+
+        </div>
+
+
+        <!--  Bouton pour la liste des courses  -->
+        <button class="button_course">
+            <h1>Liste des courses</h1>
+        </button>
+
+        <!-- fiches pour les plats -->
+        <div class="big_div" id="big_div">
+
+            <!--
+                <div class="fiche">
+                <img src="img/pate.png" alt="assiette de pate">
+                <div class="btn-group">
+                    <button class="btn-info"><img src="img/info_icone.svg" alt="Button 1" class="ipm"></button>
+                    <button class="btn-calendar"><img src="img/calender.svg" alt="Button 2" class="ipm"></button>
+                </div>
+                <h2>Spaghetti</h2>
+                <div class="btp-apport">
+                    <button class="btn-prot">PROTEINE</button>
+                    <button class="btn-fecul">FECULENT</button>
+                    <button class="btn-leg">LEGUME</button>
+                </div>
+            </div>
+
+
+            <div class="fiche">
+                <img src="img/msemen.jpg" alt="msemen">
+                <div class="btn-group">
+                    <button class="btn-info"><img src="img/info_icone.svg" alt="Button 1" class="ipm"></button>
+                    <button class="btn-calendar"><img src="img/calender.svg" alt="Button 2" class="ipm"></button>
+                </div>
+                <h2>Crepe marocaine (Msemen)</h2>
+                <div class="btp-apport">
+                    <button class="btn-prot">PROTEINE</button>
+                </div>
+            </div>
+
+            <div class="fiche">
+                <img src="img/seffa.jpg" alt="seffa">
+                <div class="btn-group">
+                    <button class="btn-info"><img src="img/info_icone.svg" alt="Button 1" class="ipm"></button>
+                    <button class="btn-calendar"><img src="img/calender.svg" alt="Button 2" class="ipm"></button>
+                </div>
+                <h2>Vermicelle (Seffa)</h2>
+                <div class="btp-apport">
+                    <button class="btn-prot">PROTEINE</button>
+                    <button class="btn-fecul">FECULENT</button>
+                    <button class="btn-leg">LEGUME</button>
+                </div>
+            </div>
+
+            <div class="fiche">
+                <img src="img/seffa.jpg" alt="seffa">
+                <div class="btn-group">
+                    <button class="btn-info"><img src="img/info_icone.svg" alt="Button 1" class="ipm"></button>
+                    <button class="btn-calendar"><img src="img/calender.svg" alt="Button 2" class="ipm"></button>
+                </div>
+                <h2>Vermicelle (Seffa)</h2>
+                <div class="btp-apport">
+                    <button class="btn-prot">PROTEINE</button>
+                    <button class="btn-fecul">FECULENT</button>
+                    <button class="btn-leg">LEGUME</button>
+                </div>
+            </div>
+-->
+        </div>
+    </div>
+
+    <div id="recipe-container" class="hide">
+        <div class="icon_div">
+            <button class="btn"><img src="img/flecheGauche.svg" alt="Button 1" class="ipm"></button>
+        </div>
+        <div class="big_div_recipe">
+            <div class=".titre_recipe">
+                <h1>Spaghetti</h1>
+            </div>
+            <div class="photo_recette">
+                <img src="img/pate.png" alt="pate">
+            </div>
+            <div class="ingredient">
+                <ul class="li_ingredient" id="li_ingredient">
+                    <li>250g de pate</li>
+                    <li>1 litre d'eau</li>
+                    <li>2c.à.c de sel</li>
+                    <li>200g de kefta</li>
+                    <li>4 tomates</li>
+                    <li>1 oignon</li>
+                    <li>1c.à.s d'huile d'olive</li>
+                </ul>
+            </div>
+            <div class="etape">
+                <ol>
+                    <li>Épluchez et émincez finement l'oignon'</li>
+                    <li>ajoutez la kefta et cuisez la a feu vif</li>
+                    <li>coupez les tomates et mettez les avec la kefta et l'oignons</li>
+                    <li>pendant que la sauce mijote, faite bouillir l'eau</li>
+                    <li>lorsque l'eau bout, ajoutez le sel et les Spaghetti. Mettez un couvercle et baissez le feu</li>
+                    <li>laissez cuire 10 minutes </li>
+                </ol>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="list-container" class="hide">
+        <div class="icon_div">
+            <button class="btn"><img src="img/flecheGauche.svg" alt="Button 1" class="ipm"></button>
+        </div>
+
+        <div class="titre_div">
+            <h1>Liste de courses</h1>
+        </div>
+        <div class="big_div_list">
+            <div class="div_courses">
+                <h2 class="h2_titre">Fruits et Legumes</h2>
+                <ul>
+                    <li>4 Tomates</li>
+                    <li>300g tomates pelée</li>
+                    <li>400g pomme de terre</li>
+                    <li>Haricots</li>
+                    <li>Mais</li>
+                    <li>2 courgettes</li>
+                    <li>3 aubergines</li>
+                    <li>2 poivrons</li>
+                    <li>3 pommes</li>
+                </ul>
+            </div>
+
+            <div class="div_courses">
+                <div>
+                    <h2 class="h2_titre">Epices & aromates</h2>
+                    <ul>
+                        <li>2c.à.s de sel</li>
+                        <li>2 feuilles de basilic</li>
+                        <li>2c.à.s de romarin</li>
+                        <li>1c.à.s de paprika</li>
+                        <li>1c.à.s de cumin</li>
+
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="h2_titre">Riz, Pate, ...</h2>
+                    <ul>
+                        <li>250g de spaghetti</li>
+                        <li>500g de pate pour lasagne</li>
+                        <li>200g de riz</li>
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="div_courses">
+                <div>
+                    <h2 class="h2_titre">Viandes</h2>
+                    <ul>
+                        <li>500g de poulet</li>
+                        <li>400g de kefta</li>
+                        <li>200g de merguez</li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h2 class="h2_titre">Produit laitier</h2>
+                    <ul>
+                        <li>100g de fromage</li>
+
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+
+    <template id="card">
+
+        <div class="fiche">
+            <img src="img/pate.png" alt="assiette de pate">
+            <div class="btn-group">
+                <button class="btn-info"><img src="img/info_icone.svg" alt="Button 1" class="ipm"></button>
+                <button class="btn-calendar"><img src="img/calender.svg" alt="Button 2" class="ipm"></button>
+            </div>
+            <h2>Spaghetti</h2>
+            <div class="btp-apport">
+                <span class="btn-prot">PROTEINE</span>
+                <span class="btn-fecul">FECULENT</span>
+                <span class="btn-leg">LEGUME</span>
+            </div>
+        </div>
+
+    </template>
+
+</body>
+
+</html>
